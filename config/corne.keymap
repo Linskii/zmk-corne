@@ -189,7 +189,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp BACKSPACE     &kp Q      &kp W                  &kp E                 &kp R                   &kp T                        &kp J                              &kp L                  &kp U                  &hrmr RIGHT_ALT Y   &kp SEMICOLON             &kp BSPC
+&kp BACKSPACE     &kp Q      &kp W                  &kp E                 &kp R                   &kp T                        &bt BT_CLR                         &bt BT_CLR_ALL         &bt BT_SEL 0           &bt BT_SEL 1        &bt BT_DISC 0             &bt BT_DISC 1
 &kp TAB           &kp A      &hrml LEFT_META S      &hrml LEFT_ALT D      &hrml LCTRL F           &kp G                        &kp M                              &hrmr LEFT_SHIFT N     &hrmr LCTRL E          &hrmr LEFT_ALT I    &hrmr LGUI O              &kp SQT
 &mt LSHFT ESCAPE  &kp LS(Z)  &hrml LS(LEFT_META) X  &hrml LS(LEFT_ALT) C  &hrml LC(LEFT_SHIFT) V  &kp B                        &kp K                              &hrmr LS(LA(LCTRL)) H  &hrmr LS(LCTRL) COMMA  &hrmr RS(LALT) DOT  &hrmr LS(LEFT_GUI) SLASH  &mt LEFT_SHIFT RET
                                                     &kp LGUI              &lt 1 UNDER             &tmtl LS(LA(LCTRL)) SPACE    &tmtr LS(LA(LG(LCTRL))) BACKSPACE  &mo 2                  &lt 4 DOUBLE_QUOTES
