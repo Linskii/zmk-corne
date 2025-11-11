@@ -98,14 +98,6 @@
             timeout-ms = <35>;
         };
 
-        combos_shutdown {
-            bindings = <&kp C_POWER>;
-            key-positions = <0 11>;
-            layers = <0>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <35>;
-        };
-
         all {
             bindings = <&kp LC(A)>;
             key-positions = <13 14>;
@@ -189,10 +181,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans            &kp Q  &kp W                  &kp E                 &kp R                     &kp T        &kp Y          &kp U                     &kp I                     &kp O                       &kp P          &kp NON_US_BACKSLASH
-&kp TAB           &kp A  &hrml LEFT_META S      &hrml LEFT_ALT D      &hrml LCTRL F             &kp G        &kp H          &hrmr LEFT_CONTROL J      &hrmr LEFT_ALT K          &hrmr LEFT_META L           &kp SEMICOLON  &kp SQT
-&mt LSHFT ESCAPE  &kp Z  &hrml LS(LEFT_META) X  &hrml LS(LEFT_ALT) C  &hrml LS(LEFT_CONTROL) V  &kp B        &kp N          &hrmr LS(LEFT_CONTROL) M  &hrmr LS(LEFT_ALT) COMMA  &hrmr LS(LEFT_META) PERIOD  &kp SLASH      &mt LEFT_SHIFT RET
-                                                &kp LGUI              &lt 1 UNDER               &kp SPACE    &kp BACKSPACE  &lt 2 GRAVE               &lt 4 DEL
+&kp DELETE        &kp Q                             &kp W                  &kp E                 &kp R                     &kp T        &kp Y          &kp U                     &kp I                     &kp O                       &kp P                                  &kp BACKSLASH
+&kp TAB           &hrml LS(LA(LCTRL)) A             &hrml LEFT_META S      &hrml LEFT_ALT D      &hrml LCTRL F             &kp G        &kp H          &hrmr LEFT_CONTROL J      &hrmr LEFT_ALT K          &hrmr LEFT_META L           &hrmr RS(RA(RIGHT_CONTROL)) SEMICOLON  &kp SQT
+&mt LSHFT ESCAPE  &hrml LA(LS(LG(LEFT_CONTROL))) Z  &hrml LS(LEFT_META) X  &hrml LS(LEFT_ALT) C  &hrml LS(LEFT_CONTROL) V  &kp B        &kp N          &hrmr LS(LEFT_CONTROL) M  &hrmr LS(LEFT_ALT) COMMA  &hrmr LS(LEFT_META) PERIOD  &hrmr RS(RA(RG(RIGHT_CONTROL))) SLASH  &mt LEFT_SHIFT RET
+                                                                           &kp LGUI              &lt 1 UNDER               &kp SPACE    &kp BACKSPACE  &lt 2 GRAVE               &to 4
             >;
         };
 
@@ -219,7 +211,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans          &trans            &trans                &trans                 &trans             &trans             &trans         &kp N1        &kp N2   &kp NUMBER_3  &trans        &trans
+&trans          &kp BACKSLASH     &kp LESS_THAN         &kp GREATER_THAN       &kp UNDERSCORE     &trans             &trans         &kp N1        &kp N2   &kp NUMBER_3  &trans        &trans
 &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE    &kp EQUAL      &kp NUMBER_4  &kp N5   &kp NUMBER_6  &kp NUMBER_0  &trans
 &trans          &kp SLASH         &kp MINUS             &kp PLUS               &kp ASTERISK       &trans             &trans         &kp N7        &kp N8   &kp N9        &trans        &kp RET
                                                         &kp LGUI               &mo 1              &kp SPACE          &kp BACKSPACE  &trans        &kp DEL
@@ -228,10 +220,10 @@
 
         tri_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans           &trans             &trans  &trans  &bt BT_CLR_ALL
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans           &trans             &trans  &trans  &trans
-                                        &trans        &trans        &trans          &trans  &trans           &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans             &trans             &trans                &trans                &bt BT_CLR_ALL
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans             &kp K_SCROLL_DOWN  &kp K_SCROLL_UP       &trans                &trans
+                                        &trans        &trans        &trans          &trans  &trans             &trans
             >;
         };
 
