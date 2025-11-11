@@ -181,10 +181,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp DELETE        &kp Q                             &kp W                  &kp E                 &kp R                     &kp T        &kp Y          &kp U                     &kp I                     &kp O                       &kp P                                  &kp BACKSLASH
-&kp TAB           &hrml LS(LA(LCTRL)) A             &hrml LEFT_META S      &hrml LEFT_ALT D      &hrml LCTRL F             &kp G        &kp H          &hrmr LEFT_CONTROL J      &hrmr LEFT_ALT K          &hrmr LEFT_META L           &hrmr RS(RA(RIGHT_CONTROL)) SEMICOLON  &kp SQT
-&mt LSHFT ESCAPE  &hrml LA(LS(LG(LEFT_CONTROL))) Z  &hrml LS(LEFT_META) X  &hrml LS(LEFT_ALT) C  &hrml LS(LEFT_CONTROL) V  &kp B        &kp N          &hrmr LS(LEFT_CONTROL) M  &hrmr LS(LEFT_ALT) COMMA  &hrmr LS(LEFT_META) PERIOD  &hrmr RS(RA(RG(RIGHT_CONTROL))) SLASH  &mt LEFT_SHIFT RET
-                                                                           &kp LGUI              &lt 1 UNDER               &kp SPACE    &kp BACKSPACE  &lt 2 GRAVE               &to 4
+&kp DELETE        &kp Q                             &kp W                  &kp E                 &kp R                     &kp T               &kp Y          &kp U                     &kp I                     &kp O                       &kp P                                  &kp BACKSLASH
+&kp TAB           &hrml LS(LA(LCTRL)) A             &hrml LEFT_META S      &hrml LEFT_ALT D      &hrml LCTRL F             &kp G               &kp H          &hrmr LEFT_CONTROL J      &hrmr LEFT_ALT K          &hrmr LEFT_META L           &hrmr RS(RA(RIGHT_CONTROL)) SEMICOLON  &kp SQT
+&mt LSHFT ESCAPE  &hrml LA(LS(LG(LEFT_CONTROL))) Z  &hrml LS(LEFT_META) X  &hrml LS(LEFT_ALT) C  &hrml LS(LEFT_CONTROL) V  &kp B               &kp N          &hrmr LS(LEFT_CONTROL) M  &hrmr LS(LEFT_ALT) COMMA  &hrmr LS(LEFT_META) PERIOD  &hrmr RS(RA(RG(RIGHT_CONTROL))) SLASH  &mt LEFT_SHIFT RET
+                                                                           &kp LGUI              &lt 1 UNDER               &hrml RALT SPACE    &kp BACKSPACE  &lt 2 GRAVE               &to 4
             >;
         };
 
